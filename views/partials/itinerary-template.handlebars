@@ -1,0 +1,20 @@
+<section class="card">
+  <!-- Links to specific itinerary by itinerary id -->
+  <a href="/itinerary/{{id}}">
+    <div class="row">
+      <div class="col-md-6"></div>
+      <h2>Your Itinerary</h2>
+    </div>
+
+    <div>{{itinerary.name}}</div>
+
+    <div class="row">
+      <!-- Data from the Calendar api-->
+      {{date}}
+    </div>
+
+    <div class="row">
+      <p>{{activities}}</p>
+    </div>
+  </a>
+</section>
