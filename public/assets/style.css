@@ -30,8 +30,8 @@ body{
 
 .header{
 	position: absolute;
-	top: calc(50% - 35px);
-	left: calc(50% - 255px);
+	top: calc(50% - 120px);
+	left: calc(50% - 150px);
 	z-index: 2;
 }
 
