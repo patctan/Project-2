@@ -24,4 +24,26 @@ router.get('/login', async (req, res) => {
     res.render('login');
 });
 
+
+//adding withAuth middleware 
+
+router.get('/homepage', withAuth, async (req, res) => {
+    try {
+        const userData = await User.findByPk(req.session.user_id, {
+            attributes: {exclude: ['password']},
+            include: [{model: Planner}],
+        });
+        const user = userData.get({plain: true});
+
+        res.render('homepage', {
+            ...user,
+            logged_in: true
+        });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+
+
 module.exports = router;
