@@ -1,16 +1,29 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  margin:0px;
+}
+#calendar{
+  background: white;
+  width: 90%;
+  margin: 20px;
+  color: black;
+  padding: 30px;
+}
+#slogan{
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  background-color: gray;
+  color:white;
+  border: 0;
+  font-size: 24px;
+  padding:10px;
+  margin: 20px;
+  cursor:pointer;
+  border-radius: 20px;
 }
 
 .App-header {
