@@ -7,9 +7,9 @@ router.get('/', async (req, res) => {
     try {
         const plannerData = await Planner.findAll();
 
-        const plans = plannerData.map((plan) => plan.get({ plain: true }));
+        const itineraries = plannerData.map((plan) => plan.get({ plain: true }));
 
-        res.render('homepage', { plans, logged_in: req.session.logged_in });
+        res.render('homepage', { itineraries, logged_in: req.session.logged_in });
     } catch (err) {
         res.status(500).json(err);
     }
