@@ -17,8 +17,8 @@ body{
 	left: -20px;
 	right: -40px;
 	bottom: -40px;
-	width: auto;
-	height: auto;
+	width: 100vw;
+	height: 100vh;
 	background-image: url(https://www.nps.gov/grte/planyourvisit/images/drive_bonney.jpg?maxwidth=1200&maxheight=1200&autorotate=false);
 	background-color: #aec6cf;
 	background-size: cover;
