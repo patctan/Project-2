@@ -24,6 +24,10 @@ router.get('/login', async (req, res) => {
     res.render('login', { layout: false });
 });
 
+router.get('/signup', async (req, res) => {
+    res.render('signup', { layout: false });
+})
+
 
 //adding withAuth middleware 
 
