@@ -9,33 +9,22 @@ body {
   color: #fff;
   font-family: Arial;
   font-size: 12px;
+  background-image: url(https://images.freeimages.com/images/previews/eea/no-end-street-1408983.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-<<<<<<< Updated upstream
-.body{
-	position: absolute;
-	top: -20px;
-	left: -20px;
-	right: -40px;
-	bottom: -40px;
-	width: 100vw;
-	height: 100vh;
-	background-image: url(https://www.nps.gov/grte/planyourvisit/images/drive_bonney.jpg?maxwidth=1200&maxheight=1200&autorotate=false);
-	background-color: #aec6cf;
-	background-size: cover;
-=======
 .body {
   position: absolute;
   top: -20px;
   left: -20px;
   right: -40px;
   bottom: -40px;
-  width: auto;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
   background-image: url(https://www.nps.gov/grte/planyourvisit/images/drive_bonney.jpg?maxwidth=1200&maxheight=1200&autorotate=false);
   background-color: #aec6cf;
   background-size: cover;
->>>>>>> Stashed changes
 
   z-index: 0;
 }
@@ -68,8 +57,83 @@ body {
   border-radius: 5px;
 }
 .brand-logo {
-  color: red;
+  color: #e7ecef;
+  font-size: 25px;
 }
+
+h1 {
+  position: relative;
+  left: 30%;
+}
+
+h1 a {
+  color: #fff;
+  text-align: center;
+  font-family: "Exo", sans-serif;
+  font-size: 50px;
+  font-weight: 200;
+}
+
+.profileLink {
+  color: #e7ecef;
+  font-size: 20px;
+}
+
+#logout {
+  background-color: #e7ecef;
+  font-family: "Exo", sans-serif;
+  font-size: 15px;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+#logout input[type="button"]:active {
+  opacity: 0.6;
+}
+
+#logout input[type="button"]:hover {
+  opacity: 0.8;
+}
+/*.login input[type="button"]:hover {
+  opacity: 0.8;
+}
+
+.login input[type="button"]:active {
+  opacity: 0.6;
+}
+*/
+.card {
+  border-color: orange;
+  width: 50%;
+  height: 250px;
+  position: relative;
+  left: 25%;
+  background-color: #e7ecef;
+  border-radius: 10px;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.planAndDate {
+  font-weight: bold;
+  font-size: 35px;
+  font-family: "Exo", sans-serif;
+}
+
+.itineraryText {
+  color: black;
+  font-size: 20px;
+  overflow: auto;
+  position: absolute;
+  bottom: 0%;
+  opacity: 1;
+  font-family: "Exo", sans-serif;
+  height: 50%;
+  text-align: center;
+  width: 100%;
+}
+
 .login {
   position: absolute;
 
