@@ -5,7 +5,14 @@ const withAuth = require('../utils/auth');
 //still need to add middleware but for now leave as is for testing
 router.get('/', withAuth, async (req, res) => {
     try {
-        const plannerData = await Planner.findAll();
+        const plannerData = await Planner.findAll({
+            include: [
+                {
+                    model: User,
+                    attributes: ['username'],
+                },
+            ],
+        });
 
         const itineraries = plannerData.map((plan) => plan.get({ plain: true }));
 
