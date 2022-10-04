@@ -1,6 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 
+
+html {
+	background: url(https://www.nps.gov/grte/planyourvisit/images/drive_bonney.jpg?maxwidth=1200&maxheight=1200&autorotate=false) no-repeat center center fixed;
+	background-size: cover;
+}
+
 body{
 	margin: 0;
 	padding: 0;
@@ -19,8 +25,7 @@ body{
 	bottom: -40px;
 	width: 100vw;
 	height: 100vh;
-	background-image: url(https://www.nps.gov/grte/planyourvisit/images/drive_bonney.jpg?maxwidth=1200&maxheight=1200&autorotate=false);
-	background-color: #aec6cf;
+	background-color: transparent;
 	background-size: cover;
 
 	z-index: 0;
