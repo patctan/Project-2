@@ -1,5 +1,5 @@
 import { ViewState, EditingState, IntegratedEditing } from '@devexpress/dx-react-scheduler';
-import { Scheduler, MonthView, WeekView, Toolbar, ViewSwitcher, DayView, Appointments, AppointmentForm } from '@devexpress/dx-react-scheduler-material-ui';
+import { Scheduler, MonthView, WeekView, Toolbar, DateNavigator, TodayButton, ViewSwitcher, DayView, Appointments, AppointmentForm } from '@devexpress/dx-react-scheduler-material-ui';
 
 const saveAppointment = () =>{
     console.log('')
@@ -16,6 +16,8 @@ const Calendar = () => {
             <MonthView />
             <DayView/>
             <Toolbar/>
+            <DateNavigator />
+            <TodayButton/>
             <ViewSwitcher/>
             <Appointments />
             <AppointmentForm />
