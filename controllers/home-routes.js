@@ -5,11 +5,18 @@ const withAuth = require('../utils/auth');
 //still need to add middleware but for now leave as is for testing
 router.get('/', async (req, res) => {
     try {
-        const plannerData = await Planner.findAll();
+        const plannerData = await Planner.findAll({
+            include: [
+                {
+                    model: User,
+                    attributes: ['username'],
+                },
+            ],
+        });
 
-        const plans = plannerData.map((plan) => plan.get({ plain: true }));
+        const itineraries = plannerData.map((plan) => plan.get({ plain: true }));
 
-        res.render('homepage', { plans, logged_in: req.session.logged_in });
+        res.render('homepage', { itineraries, logged_in: req.session.logged_in });
     } catch (err) {
         res.status(500).json(err);
     }
@@ -21,7 +28,7 @@ router.get('/login', async (req, res) => {
         return;
     }
 
-    res.render('login');
+    res.render('login', {layout: false});
 });
 
 
