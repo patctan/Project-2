@@ -1,25 +1,31 @@
-<div class="row">
-  <div class="col-md-6">
-    <h2>Sign Up</h2>
-
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="username-signup">Username:</label>
-        <input class="form-input" type="text" id="name-signup" />
-      </div>
-      <div class="form-group">
-        <label for="email-signup">Email:</label>
-        <input class="form-input" type="text" id="email-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">Password:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">Sign Up!</button>
-      </div>
-    </form>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadtrip Planner</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body class="body">
+  <div class="header">
+    <div>Roadtrip<span>Planner</span></div>
+    <h3>made&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;easy</h3>
 </div>
 
-<script src="./js/signup.js"></script>
+<br>
+
+<form class="login-form">
+  <div class="login">
+    <input type="text" placeholder="username" name="user" id="username"><br>
+    <input type="password" placeholder="password" name="password" id="password"><br>
+    <input type="button" value="Sign Up" id="sign-up">
+    <input type="button" value="Already a member? Log in here" id="a-member">
+    <!-- possible new member sign up button -->
+  </div>
+</form>
+
+<script src="./js/login-signup.js"></script>  
+</body>
+</html>
+
