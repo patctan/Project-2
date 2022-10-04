@@ -6,15 +6,15 @@
       <h2>Your Itinerary</h2>
     </div>
 
-    <div>{{itinerary.name}}</div>
+    <div>{{plan_name}}</div>
 
     <div class="row">
       <!-- Data from the Calendar api-->
-      {{date}}
+      {{format_date start_date}}
     </div>
 
     <div class="row">
-      <p>{{activities}}</p>
+      <p>{{description}}</p>
     </div>
   </a>
 </section>
