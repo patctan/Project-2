@@ -214,3 +214,8 @@ h1 a {
 ::-moz-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
+
+img{
+    width: 75px;
+    height: 75px;
+}
