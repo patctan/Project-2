@@ -10,6 +10,9 @@
 This application is designed to help users plan trips and store all of their plans in one location.
 When you open the application, you'll be prompted to either sign up or login, and then you'll be able to input details for any trips you have, as well as their associated dates.
 
+## Link to Deployed Application
+https://roadtrip-planner-project.herokuapp.com/
+
 ## Installation
 
 1. Go to the repository page of the application (linked below), and press the green button that says "Code."
@@ -31,4 +34,10 @@ When you open the application, you'll be prompted to either sign up or login, an
 In the future, we’d like to add an existing application that can add restaurants and their locations with information about their websites for easier access through our app.
 We’d also like to have our app be able to give directions, similar to Google Maps.
 
-## Credits
+## Credits and Github Account
+Juan Gonzales - https://github.com/JuaGon653 <br>
+Jacob Schwal - https://github.com/jacobschwal <br>
+Patrick Tan - https://github.com/patctan <br>
+Valeria Lopez - https://github.com/valopezs <br>
+Francisco Rangel - https://github.com/rangelf09 <br>
+Emma Yarborough - https://github.com/carsonyarborough
